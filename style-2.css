@@ -1,0 +1,46 @@
+img {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+}
+
+.fon {
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+.fon::after {
+  position: absolute;
+  top: -5px;
+  left: -3px;
+  z-index: -1;
+  content: '';
+  display: block;
+  width: calc(100% + 0.4em);
+  height: calc(100% + 0.4em);
+  border-radius: 10px;
+  background-size: 200%;
+  animation-name: kuld-;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-image: linear-gradient(99deg, rgb(51, 253, 0) 0%, rgb(255, 0, 0) 50%, rgb(255, 230, 0) 100%);
+}
+
+@keyframes kuld- {
+  0% {
+    background-position: 0;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0;
+  }
+}
