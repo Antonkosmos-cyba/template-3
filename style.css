@@ -1,12 +1,13 @@
 :root {
-  --color1: #c85e93;
+  --color1: #5eb8c8;
   --color2: #1a530b;
-  --bgc: #e0b6b6de;
-  --white: #fff;
-  --red: #ff3333;
-  --text: #5f8a4c;
-  --text-card: #f28b82;
-  --text-header: #2c2c2c;
+  --color3: #e0b6b6de;
+  --color4: #fff;
+  --color5: #5bb736;
+  --color6: #5f8a4c;
+  --color7: #f28b82;
+  --color8: #5e6aa0;
+  --color9: #bcbcbc;
 }
 
 * {
@@ -27,8 +28,8 @@
 
 
 .text-muz {
-  text-shadow: #fff 2px 2px;
-  color: var(--red);
+  text-shadow: var(--color4) 2px 2px;
+  color: var(--color8);
   margin-top: 10px;
 }
 
@@ -50,24 +51,25 @@
 }
 
 .offcanvas {
-  background-color: #d288ad;
+  background-color: var(--color9);
 }
 
 .btn-color {
   background-color: var(--color1);
+  box-shadow: var(--color4) 0px 0px 18px 4px;
 }
 
 .text-h1 {
-  color: var(--red);
+  color: var(--color8);
   font-size: 60px;
 }
 
 .btn-h1 {
-  color: #2d5db8;
+  color: var(--color8);
 }
 
 .btn:hover {
-  color: var(--text-card);
+  color: var(--color8);
 }
 
 @media (min-width: 320px) {
@@ -96,7 +98,7 @@
 
 .btn-h5 {
   color: #2d5db8;
-  ;
+
 }
 
 .btn-h5:hover {
@@ -114,6 +116,10 @@
 
 .red {
   color: #71de6f;
+}
+
+img {
+  width: 30%;
 }
 
 .images {
@@ -144,7 +150,6 @@
 
 .wa {
   background-color: var(--color1);
-  ;
   border-radius: 10px;
 }
 
@@ -206,7 +211,7 @@ footer {
 .carousel-control-prev {
   width: 50px;
   height: 50px;
-  background-color: #563f28;
+  background-color: #4793ea;
   border-radius: 50%;
 }
 
